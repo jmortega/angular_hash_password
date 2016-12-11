@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<script src="CryptoJS/components/core.js"></script>
+	<script src="CryptoJS/components/enc-base64-min.js"></script>
+	<script src="CryptoJS/rollups/md5.js"></script>
+    <script src="CryptoJS/rollups/sha1.js"></script>
+    <script src="CryptoJS/rollups/sha256.js"></script>
+    <script src="CryptoJS/rollups/sha512.js"></script>
+	<script src="CryptoJS/rollups/md5.js"></script> </head>
+	<script src="script.js"></script>
+
+  <body ng-controller="PruebaController">
+    Contrase&ntilde;a:<input ng-model="password" />
+    <br>
+    El hash de la contrase&ntilde;a es:
+    <br>
+    {{getHash(password)}}
+  </body>
+</html>
